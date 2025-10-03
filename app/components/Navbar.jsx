@@ -24,7 +24,7 @@ const Navbar = () => {
           />
         </a>
 
-        <ul className="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 shadow-2xl ">
+        <ul className="hidden bg-white md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 shadow-2xl ">
           <li>
             <a className="font-ovo" href="#top">
               Home
@@ -89,21 +89,21 @@ const Navbar = () => {
             />
           </div>
 
-          <li className=" px-6 py-2 rounded-r-2xl hover:shadow-2xl hover:bg-transparent border border-transparent">
+          <li className=" px-6 py-2 rounded-r-2xl hover:shadow-2xl hover:bg-white border border-transparent">
             <a href="#top" className="">
               Home
             </a>
           </li>
-          <li className=" px-6 py-2 rounded-r-2xl hover:shadow-2xl hover:bg-transparent border border-transparent">
+          <li className=" px-6 py-2 rounded-r-2xl hover:shadow-2xl hover:bg-white border border-transparent">
             <a href="#about">About Me</a>
           </li>
-          <li className=" px-6 py-2 rounded-r-2xl hover:shadow-2xl hover:bg-transparent border border-transparent">
+          <li className=" px-6 py-2 rounded-r-2xl hover:shadow-2xl hover:bg-white border border-transparent">
             <a href="#services">Services</a>
           </li>
-          <li className=" px-6 py-2 rounded-r-2xl hover:shadow-2xl hover:bg-transparent border border-transparent">
+          <li className=" px-6 py-2 rounded-r-2xl hover:shadow-2xl hover:bg-white border border-transparent">
             <a href="#work">My Work</a>
           </li>
-          <li className=" px-6 py-2 rounded-r-2xl hover:shadow-2xl hover:bg-transparent border border-transparent">
+          <li className=" px-6 py-2 rounded-r-2xl hover:shadow-2xl hover:bg-white border border-transparent">
             <a href="#contact">Contact Me</a>
           </li>
         </ul>

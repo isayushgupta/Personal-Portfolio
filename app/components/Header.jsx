@@ -4,12 +4,12 @@ import { assets } from "@/assets/assets";
 
 const Header = () => {
   return (
-    <div className=" w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
+    <div id="top" className=" w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
       <div>
         <Image
           src={assets.profile_img}
           alt="ayush"
-          className="w-45 rounded-full "
+          className=" h-40 w-40 rounded-full "
         />
       </div>
 
@@ -18,12 +18,11 @@ const Header = () => {
         <Image src={assets.hand_icon} className="w-6" alt="" />
       </h3>
 
-      <h1 className="font-ovo text-3xl sm:text-6xl">fullstack web developer</h1>
+      <h1 className="font-ovo text-3xl sm:text-6xl">fullstack web developer based in India.</h1>
 
       <p className="max-w-3xl text-center mx-auto font-ovo">
-        I am an aspiring fullstack developer based in India, currently a
-        Computer Science student at VIT Bhopal. Eager to leverage my skills in
-        React & Node.Js to build intuitive and scalable web applications.
+        I am a fullstack developer based in India, currently a final year B.Tech
+        Computer Science student. Eager to leverage my skills to solve real world problems and build intuitive & scalable web applications.
       </p>
 
       <div className=" flex flex-col sm:flex-row items-ce
@@ -38,6 +37,7 @@ const Header = () => {
           <Image src={assets.download_icon} className="w-4" alt="" />
         </a>
       </div>
+
     </div>
   );
 };
