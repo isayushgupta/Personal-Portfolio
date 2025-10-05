@@ -35,3 +35,17 @@
 .shadow-hover-white:hover{
   box-shadow: 4px 4px 0 #fff;
 }
+
+.bg-opacity-50
+{
+  background-color: rgba(255, 255, 255,0.5);
+}
+
+/* hover:bg-[#fcf4ff]   : Hover-bg-light
+Hover */
+
+.grid-cols-auto
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}

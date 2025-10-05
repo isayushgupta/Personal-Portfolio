@@ -8,7 +8,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className=" w-full px-[12%] py-10 h-screen flex flex-col items-center"
+      className=" w-full px-[12%] py-10 flex flex-col items-center"
     >
       <h4 className="text-center mb-2 text-lg font-ovo">Introduction</h4>
       <h2 id="about" className="text-center text-5xl font-ovo">
@@ -27,9 +27,7 @@ const About = () => {
         <div className="flex-1">
           <p className="mb-10 max-w-2xl font-ovo ">
             I am a final-year Computer Science student and a passionate
-            full-stack web developer with a solid foundation in Java, Data
-            Structures and Algorithms. I am actively seeking an opportunity to
-            contribute to a dynamic team and grow as a software developer.
+            full-stack web developer with a solid foundation in Java, Data Structures & Algorithms. I am actively seeking an opportunity to contribute to a dynamic team where i can contribute to real world business solutions  and grow as a software developer.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl">
