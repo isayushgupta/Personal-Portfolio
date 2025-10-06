@@ -81,21 +81,25 @@ export const projects = [
         title: 'Frontend project',
         description: 'Web Design',
         bgImage: '/work-1.png',
+        link:""
     },
     {
         title: 'Geo based app',
         description: 'Mobile App',
         bgImage: '/work-2.png',
-    },
-    {
+        link:""
+      },
+      {
         title: 'Photography site',
         description: 'Web Design',
         bgImage: '/work-3.png',
-    },
-    {
+        link:""
+      },
+      {
         title: 'UI/UX designing',
         description: 'UI/UX Design',
         bgImage: '/work-4.png',
+        link:""
     },
 ]
 
@@ -111,7 +115,7 @@ export const serviceData = [
     icon: assets.ui_icon,
     title: "UI/UX design",
     description:
-      "I can help you create intuitive and efficient user experiences by focusing on your users' needs and behaviors. .",
+      "I can help you create intuitive and efficient user experiences by focusing on your users' needs and behaviors.",
     link: "",
   },
 ];

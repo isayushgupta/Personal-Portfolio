@@ -14,30 +14,28 @@ const Navbar = () => {
   const closeMenu = () => {
     sideMenuRef.current.style.transform = "translateX(16rem)";
   };
-  
+
   useEffect(() => {
-    window.addEventListener('scroll', ()=>{
-      if(scrollY > 50)
-      {
-        setisScroll(true)
+    window.addEventListener("scroll", () => {
+      if (scrollY > 50) {
+        setisScroll(true);
+      } else {
+        setisScroll(false);
       }
-
-      else{
-        setisScroll(false)
-      }
-
-    })
-  }, [])
-  
+    });
+  }, []);
 
   return (
     <>
-
       <div className=" fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
-        <Image alt="" src={assets.header_bg_color} className="w-full"/>
+        <Image alt="" src={assets.header_bg_color} className="w-full" />
       </div>
 
-      <nav className={` w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${isScroll? " bg-opacity-50 backdrop-blur-lg shadow-sm" : ""}`}>
+      <nav
+        className={` w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${
+          isScroll ? " bg-opacity-50 backdrop-blur-lg shadow-sm" : ""
+        }`}
+      >
         <a href="#top">
           <Image
             alt="logo"
@@ -46,7 +44,11 @@ const Navbar = () => {
           />
         </a>
 
-        <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScroll? "shadow-2xl bg-opacity-50 bg-white":""}`}>
+        <ul
+          className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${
+            isScroll ? "shadow-2xl bg-opacity-50 bg-white" : ""
+          }`}
+        >
           <li>
             <a className="font-ovo" href="#top">
               Home
@@ -63,7 +65,7 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <a className="font-ovo" href="#work">
+            <a className="font-ovo" href="#projects">
               My Work
             </a>
           </li>
@@ -83,7 +85,7 @@ const Navbar = () => {
             />
           </button>
 
-          <a 
+          <a
             href="#contact"
             className="border border-gray-500 font-ovo hidden lg:flex items-center gap-3 px-8 py-2.5 rounded-full ml-4"
           >
@@ -100,7 +102,9 @@ const Navbar = () => {
 
         <ul
           ref={sideMenuRef}
-          className=" bg-gray-100 rounded-l-lg  shadow-xl md:hidden flex flex-col gap-2 py-20 px-2  fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen transition duration-500"
+          className={`
+           bg-[rgba(255,255,255)]
+          } shadow-2xl md:hidden flex flex-col py-20 px-2 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen transition duration-600`}
         >
           <div className="absolute right-6 top-6">
             <Image
@@ -111,23 +115,40 @@ const Navbar = () => {
             />
           </div>
 
-          <li className=" px-6 py-2 rounded-r-2xl hover:shadow-2xl hover:bg-white border border-transparent">
-            <a href="#top" className="">
-              Home
-            </a>
-          </li>
-          <li className=" px-6 py-2 rounded-r-2xl hover:shadow-2xl hover:bg-white border border-transparent">
-            <a href="#about">About Me</a>
-          </li>
-          <li className=" px-6 py-2 rounded-r-2xl hover:shadow-2xl hover:bg-white border border-transparent">
-            <a href="#services">Services</a>
-          </li>
-          <li className=" px-6 py-2 rounded-r-2xl hover:shadow-2xl hover:bg-white border border-transparent">
-            <a href="#work">My Work</a>
-          </li>
-          <li className=" px-6 py-2 rounded-r-2xl hover:shadow-2xl hover:bg-white border border-transparent">
-            <a href="#contact">Contact Me</a>
-          </li>
+          <a
+            href="#top"
+            className=" px-6 py-2 rounded-r hover:shadow-2xl hover:bg-black hover:text-white"
+          >
+            Home
+          </a>
+
+          <a
+            href="#about"
+            className=" px-6 py-2 rounded-r hover:shadow-2xl hover:bg-black hover:text-white"
+          >
+            About Me
+          </a>
+
+          <a
+            href="#services"
+            className=" px-6 py-2 rounded-r hover:shadow-2xl hover:bg-black hover:text-white"
+          >
+            Services
+          </a>
+
+          <a
+            href="#projects"
+            className=" px-6 py-2 rounded-r hover:shadow-2xl hover:bg-black hover:text-white"
+          >
+            My Work
+          </a>
+
+          <a
+            href="#contact"
+            className=" px-6 py-2 rounded-r hover:shadow-2xl hover:bg-black hover:text-white"
+          >
+            Contact Me
+          </a>
         </ul>
       </nav>
     </>

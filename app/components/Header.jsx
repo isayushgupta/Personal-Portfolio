@@ -4,7 +4,7 @@ import { assets } from "@/assets/assets";
 
 const Header = () => {
   return (
-    <div id="top" className=" w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
+    <div id="top" className=" w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4 pt-20 ">
       <div>
         <Image
           src={assets.profile_img}

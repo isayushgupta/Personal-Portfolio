@@ -5,19 +5,14 @@ import React from "react";
 const MyServices = () => {
   return (
     <>
-      <div
-        id="services"
-        className="  w-full  px-[12%] py-10 scroll-mt"
-      >
+      <div id="services" className="  w-full  px-[12%] pt-30 scroll-mt">
         <h4 className="text-center mb-2 text-lg font-ovo">What i offer?</h4>
         <h2 id="about" className="text-center text-5xl font-ovo">
           My services
         </h2>
 
         <div className=" grid grid-cols-auto gap-6 my-12">
-          {
-            serviceData.map((service, idx) => {
-
+          {serviceData.map((service, idx) => {
             const { icon, title, description } = service;
 
             return (
