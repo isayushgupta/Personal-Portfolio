@@ -10,7 +10,10 @@ const config = {
       },
     },
   },
-  darkMode: "selector",
+  darkMode: ["class", '[data-mode="dark"]'],
+  future: {
+    hoverOnlyWhenSupported: true,
+  },
   plugins: [],
 };
 

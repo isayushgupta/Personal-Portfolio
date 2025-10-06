@@ -1,10 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Ovo&display=swap');
 @import "tailwindcss";
 
-/* @tailwind base; */
-/* @tailwind components; */
-/* @tailwind utilities; */
+:root {
+  --background: #ffffff;
+  --foreground: #000000;
+}
 
+[data-mode="dark"] {
+  --background: #11001F;
+  --foreground: #ffffff;
+}
+
+.dark {
+  --background: #11001F;
+  --foreground: #ffffff;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
 
 *{
   font-family: outfit;
@@ -54,7 +70,7 @@ Hover */
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-.dark
+/* .dark
 {
       background-color: #11001F;
-}
+} */

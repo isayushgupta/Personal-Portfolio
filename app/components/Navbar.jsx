@@ -2,7 +2,7 @@ import { assets } from "@/assets/assets";
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 
-const Navbar = () => {
+const Navbar = ({ isDarkMode, setisDarkMode }) => {
   const sideMenuRef = useRef();
   // const [scroll, setscroll] = useState(false);
   const [isScroll, setisScroll] = useState(false);
@@ -27,8 +27,14 @@ const Navbar = () => {
 
   return (
     <>
-      <div className=" fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
-        <Image alt="" src={assets.header_bg_color} className="w-full" />
+      <div className="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
+        <Image
+          alt=""
+          src={assets.header_bg_color}
+          className={`w-full transition-opacity duration-200 ${
+            isDarkMode ? "hidden" : "block"
+          }`}
+        />
       </div>
 
       <nav
@@ -46,7 +52,9 @@ const Navbar = () => {
 
         <ul
           className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${
-            isScroll ? "shadow-2xl bg-opacity-50 bg-white" : "bg-white/90 shadow-xl backdrop-blur-2xl"
+            isScroll
+              ? "shadow-2xl bg-opacity-50 bg-white"
+              : "bg-white/90 shadow-xl backdrop-blur-2xl"
           }`}
         >
           <li>
@@ -77,9 +85,12 @@ const Navbar = () => {
         </ul>
 
         <div className="flex gap-4">
-          <button className="cursor-pointer">
+          <button
+            onClick={() => setisDarkMode(!isDarkMode)}
+            className="cursor-pointer transition-all duration-200"
+          >
             <Image
-              src={assets.moon_icon}
+              src={isDarkMode ? assets.sun_icon : assets.moon_icon}
               alt="toggle darkmode"
               className="w-6"
             />
