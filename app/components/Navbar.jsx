@@ -46,7 +46,7 @@ const Navbar = () => {
 
         <ul
           className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${
-            isScroll ? "shadow-2xl bg-opacity-50 bg-white" : ""
+            isScroll ? "shadow-2xl bg-opacity-50 bg-white" : "bg-white/90 shadow-xl backdrop-blur-2xl"
           }`}
         >
           <li>

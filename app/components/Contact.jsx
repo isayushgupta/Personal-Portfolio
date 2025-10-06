@@ -29,8 +29,8 @@ const Contact = () => {
    };
 
   return (
-    <>
-      <div id="contact" className=" w-full px-[12%] py-10 scroll-mt-20">
+    
+      <div id="contact"  className=" w-full px-[12%] py-10 scroll-mt-20">
         <h4 className=" text-center mb-2 text-lg font-ovo">
           Wanna Collaborate?
         </h4>
@@ -38,7 +38,7 @@ const Contact = () => {
           Contact Me
         </h2>
 
-        <p className=" text-gray-600 font-ovo text-center m-auto my-5 w-lg">
+        <p className=" text-gray-600 font-ovo text-center mx-auto my-5 w-fit">
           I would love to hear from you! If you have any questions, comments or
           feedback please use the form below.
         </p>
@@ -82,7 +82,7 @@ const Contact = () => {
         </form>
           <p className={`mt-10 ${Result==""? "hidden" : "block"}`}>{Result}</p>
       </div>
-    </>
+    
   );
 };
 
