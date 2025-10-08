@@ -2,9 +2,12 @@ import React from "react";
 import Image from "next/image";
 import { assets } from "@/assets/assets";
 
-const Header = () => {
+const Header = ({isDarkMode, setisDarkMode}) => {
   return (
-    <div id="top" className=" w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4 pt-20 ">
+    <div
+      id="top"
+      className=" w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4 pt-20 "
+    >
       <div>
         <Image
           src={assets.profile_img}
@@ -18,26 +21,41 @@ const Header = () => {
         <Image src={assets.hand_icon} className="w-6" alt="" />
       </h3>
 
-      <h1 className="font-ovo text-3xl sm:text-6xl">fullstack web developer based in India.</h1>
+      <h1 className="font-ovo text-3xl sm:text-6xl">
+        fullstack web developer based in India.
+      </h1>
 
       <p className="max-w-3xl text-center mx-auto font-ovo">
         I am a fullstack developer based in India, currently a final year B.Tech
-        Computer Science student. Eager to leverage my skills to solve real world problems and build intuitive & scalable web applications.
+        Computer Science student. Eager to leverage my skills to solve real
+        world problems and build intuitive & scalable web applications.
       </p>
 
-      <div className=" flex flex-col sm:flex-row items-ce
-       gap-4 mt-4">
-        <a href="#contact" className="px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2">
+      <div
+        className=" flex flex-col sm:flex-row items-ce
+       gap-4 mt-4"
+      >
+        <a
+          href="#contact"
+          className={`px-10 py-3 border rounded-full  border-white flex items-center gap-2 ${
+            isDarkMode ? "bg-transparent" : "bg-black  text-white"
+          }`}
+        >
           Contact Me
           <Image src={assets.right_arrow_white} className="w-4 " alt="" />
         </a>
 
-        <a href="/AyushGupta-Resume.pdf" download className="border px-10 py-3 rounded-full border-gray-500 flex items-center gap-2">
+        <a
+          href="/AyushGupta-Resume.pdf"
+          download
+          className={`border px-10 py-3 rounded-full  flex items-center gap-2 ${
+            isDarkMode ? "bg-white text-gray-800" : "border-gray-500"
+          }`}
+        >
           My Resume
           <Image src={assets.download_icon} className="w-4" alt="" />
         </a>
       </div>
-
     </div>
   );
 };

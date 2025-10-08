@@ -4,7 +4,7 @@ import React from "react";
 // import Tools from "./Tools";
 import Cards from "./Cards";
 
-const About = () => {
+const About = ({isDarkMode, setisDarkMode}) => {
   return (
     <div
       id="about"
@@ -40,6 +40,8 @@ const About = () => {
               title={"Technical Skills"}
               description={`  Java(DSA), HTML, CSS, JavaScript, ReactJs, NextJs, Express,
                 MongoDB`}
+              isDarkMode={isDarkMode}
+              setisDarkMode={setisDarkMode}
             />
 
             <Cards
@@ -48,11 +50,19 @@ const About = () => {
               title={"Education"}
               description={` B.Tech in Computer Science from Vellore Institute of
                 Technology - Bhopal`}
+              isDarkMode={isDarkMode}
+              setisDarkMode={setisDarkMode}
             />
           </div>
 
           <div>
-            <h4 className=" my-6 font-ovo text-lg text-gray-700">Tools i use</h4>
+            <h4
+              className={`my-6 font-ovo text-lg ${
+                isDarkMode ? "text-gray-400" : "text-gray-700"
+              }`}
+            >
+              Tools i use
+            </h4>
 
             <ul className="flex items-center gap-3 sm:gap-5">
               {toolsData.map((tool, index) => (

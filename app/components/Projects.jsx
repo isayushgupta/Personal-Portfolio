@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Tag from "./Tag";
 
-const Projects = () => {
+const Projects = ({ isDarkMode, setisDarkMode }) => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
 
@@ -118,10 +118,17 @@ const Projects = () => {
         })}
       </div>
 
-      <button className="w-max text-sm text-gray-600 border-gray-600 border-[0.5px] flex gap-2 items-center justify-center py-3 rounded-full px-8 mx-auto mt-14 hover:bg-[#fcf4ff] ">
+      <button
+        className={`w-max text-sm border-[0.5px] flex gap-2 items-center justify-center py-3 rounded-full px-8 mx-auto mt-14  
+          ${
+            isDarkMode
+              ? "text-gray-100 border-gray-400 hover:bg-white/10"
+              : "text-gray-700 border-gray-600 hover:bg-[#fcf4ff]"
+          }`}
+      >
         Show More
         <Image
-          src={assets.right_arrow_bold}
+          src={isDarkMode ? assets.right_arrow_white : assets.right_arrow_bold}
           alt="Right arrow"
           className="w-4"
         />
@@ -130,12 +137,12 @@ const Projects = () => {
       <style jsx>{`
         @keyframes fade-in-up {
           from {
-            // opacity: 0;
-            // transform: translateY(10px);
+            opacity: 0;
+            transform: translateY(10px);
           }
           to {
-            // opacity: 1;
-            // transform: translateY(0);
+            opacity: 1;
+            transform: translateY(0);
           }
         }
 
