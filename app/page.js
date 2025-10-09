@@ -7,6 +7,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { useEffect, useState } from "react";
+import { motion } from "motion/react";
 
 export default function Home() {
 
@@ -43,13 +44,14 @@ export default function Home() {
   
   return (
     <>
-      <Navbar isDarkMode={isDarkMode} setisDarkMode = {setisDarkMode}/>
-      <Header isDarkMode={isDarkMode} setisDarkMode = {setisDarkMode} />
-      <About isDarkMode={isDarkMode} setisDarkMode = {setisDarkMode} />
-      <MyServices isDarkMode={isDarkMode} setisDarkMode = {setisDarkMode} />
-      <Projects isDarkMode={isDarkMode} setisDarkMode = {setisDarkMode} />
-      <Contact isDarkMode={isDarkMode} setisDarkMode = {setisDarkMode} />
-      <Footer isDarkMode={isDarkMode} setisDarkMode = {setisDarkMode} />
+      {/* <motion.ul animate={{ rotate: 360 }} /> */}
+      <Navbar isDarkMode={isDarkMode} setisDarkMode={setisDarkMode} />
+      <Header isDarkMode={isDarkMode} setisDarkMode={setisDarkMode} />
+      <About isDarkMode={isDarkMode} setisDarkMode={setisDarkMode} />
+      <MyServices isDarkMode={isDarkMode} setisDarkMode={setisDarkMode} />
+      <Projects isDarkMode={isDarkMode} setisDarkMode={setisDarkMode} />
+      <Contact isDarkMode={isDarkMode} setisDarkMode={setisDarkMode} />
+      <Footer isDarkMode={isDarkMode} setisDarkMode={setisDarkMode} />
     </>
   );
 }

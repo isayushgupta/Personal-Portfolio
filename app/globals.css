@@ -13,6 +13,8 @@
   --shadow-color: rgba(255, 255, 255, 0.2);
 }
 
+
+
 .dark {
   /* --background: #11001F; */
   --background: #0f0f0f;
@@ -20,6 +22,7 @@
 }
 
 body {
+  
   background-color: var(--background);
   color: var(--foreground);
   transition: background-color 0.2s ease, color 0.2s ease;

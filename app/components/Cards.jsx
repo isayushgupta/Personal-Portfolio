@@ -1,10 +1,12 @@
 import Image from "next/image";
 import React from "react";
-
-
+import {motion} from "motion/react";
 const Cards = ({ icon, iconDark, title, description, isDarkMode, setisDarkMode}) => {
   return (
-    <div
+    <motion.div
+      initial = {{scale:0}}
+      whileInView={{scale:1}}
+      transition={{ duration: 0.6}}
       className={`border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer  hover:-translate-y-1 hover:translate-x-1 duration-500 shadow-hover-black ${
         isDarkMode
           ? "hover:bg-white/5 shadow-hover-white"
@@ -24,7 +26,7 @@ const Cards = ({ icon, iconDark, title, description, isDarkMode, setisDarkMode})
         {title}
       </h3>
       <p className="text-sm">{description}</p>
-    </div>
+    </motion.div>
   );
 };
 
