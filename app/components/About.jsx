@@ -59,7 +59,7 @@ const About = ({ isDarkMode, setisDarkMode }) => {
         >
           <p className="mb-10 max-w-2xl font-ovo text-center lg:text-left">
             I am a final year B.Tech Computer Science Engineering student and a passionate
-            full-stack web developer using ReactJs and Spring Boot. I am actively seeking an opportunity to
+            software engineer skilled in web developement. I am actively seeking an opportunity to
             contribute to a dynamic team where i can contribute to real world
             business solutions and grow as a software developer.
           </p>
