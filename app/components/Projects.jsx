@@ -46,7 +46,7 @@ const Projects = ({ isDarkMode, setisDarkMode }) => {
         className="grid grid-cols-auto my-10 gap-5"
       >
         {projects.map((project, idx) => {
-          const { title, description, bgImage, link } = project;
+          const { title, description, bgImage, link , technology} = project;
 
           return (
             <motion.div
@@ -82,7 +82,7 @@ const Projects = ({ isDarkMode, setisDarkMode }) => {
                     </p>
                   </div>
                   <a
-                    href={link}
+                    href={link} target="_blank"
                     className="rounded-full group-hover:shadow shadow-2xl shadow-black"
                   >
                     <motion.div
@@ -98,11 +98,16 @@ const Projects = ({ isDarkMode, setisDarkMode }) => {
                   </a>
                 </div>
                 <div className="hidden group-hover:flex flex-wrap mt-2 gap-0.5">
-                  <Tag tech="Html"></Tag>
+                  
+                  {technology.map((t, index)=>{
+                    return <Tag tech={t} key={index}></Tag>
+                  })}
+                  
+                  {/* <Tag tech="Html"></Tag>
                   <Tag tech="Css"></Tag>
                   <Tag tech="React"></Tag>
-                  <Tag tech="Express"></Tag>
-                  <Tag tech="MongoDB"></Tag>
+                  <Tag tech="Spring Boot"></Tag>
+                  <Tag tech="MySql"></Tag> */}
                 </div>
               </motion.div>
 

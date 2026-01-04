@@ -38,6 +38,9 @@ import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import twitter from "./twitter.png";
 import github from "./github.png";
 import linkedin from './linkedin.png';
+// import intelliJ from './intelliJ.png';
+import postman from './postman.png';
+
 
 export const assets = {
     user_image,
@@ -85,28 +88,33 @@ export const assets = {
 
 export const projects = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
+        title: 'Email Assistant',
+        description: 'FullStack application that can summarize emails for you using Gemini API in the backend',
         bgImage: '/work-1.png',
-        link:""
+        link:"#",
+        technology:["ReactJs", "SpringBoot", "Rest APIs", "MySQL"]
     },
-    {
-        title: 'Geo based app',
-        description: 'Mobile App',
+  {
+    title: 'Research Assistant',
+    description: 'Developed a chrome extension that allows users to select text on a webpage and generates summary for it and allows notes creation in place',
+    bgImage: '/work-3.png',
+    link: "https://github.com/isayushgupta/Research-Assistant-Backend",
+    technology: ["Html", "CSS", "JavaScript", "SpringBoot", "Rest API", "GeminiAPI"]
+  },
+     {
+        title: 'WorkTrack',
+        description: 'A role based task management application build wholly on Frontend using local storage to save employee and admin data. ',
         bgImage: '/work-2.png',
-        link:""
+        link:"https://worktrack.vercel.app",
+       technology: ["ReactJS", "Tailwind CSS"]
       },
+   
       {
-        title: 'Photography site',
-        description: 'Web Design',
-        bgImage: '/work-3.png',
-        link:""
-      },
-      {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
+        title: 'Portfolio website',
+        description: 'An intuitive and responsive portfolio website built using NextJs to showcase my skils and projects to the potential recruiters',
         bgImage: '/work-4.png',
-        link:""
+        link:"https://isayushgupta.vercel.app",
+        technology: ["NextJS", "Tailwind CSS"]
     },
 ]
 
@@ -115,14 +123,14 @@ export const serviceData = [
     icon: assets.web_icon,
     title: "Web Development",
     description:
-      "I can help you build high-performance, responsive web applications from start to finish using the MERN (MongoDB, Express.js, React, Node.js) stack.",
+      "I can help you build high-performance, responsive web applications from start to finish using front-end library ReactJs and back-end frame work SpringBoot.",
     link: "",
   },
   {
     icon: assets.ui_icon,
-    title: "UI/UX design",
+    title: "Graphic design",
     description:
-      "I can help you create intuitive and efficient user experiences by focusing on your users' needs and behaviors.",
+      "I can help you create intuitive and efficient posters, banners and design assests for your organisation using design tools like Canva and Figma.",
     link: "",
   },
 ];
@@ -134,5 +142,5 @@ export const infoList = [
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+    assets.vscode, assets.figma, assets.git, assets.mongodb
 ];

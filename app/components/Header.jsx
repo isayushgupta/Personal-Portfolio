@@ -47,7 +47,7 @@ const Header = ({isDarkMode, setisDarkMode}) => {
         className="max-w-3xl text-center mx-auto font-ovo"
       >
         I am a fullstack developer based in India, currently a final year B.Tech
-        Computer Science student. Eager to leverage my skills to solve real
+        Computer Science student. I am eager to leverage my skills to solve real
         world problems and build intuitive & scalable web applications.
       </motion.p>
 

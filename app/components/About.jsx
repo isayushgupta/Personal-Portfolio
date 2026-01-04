@@ -58,9 +58,8 @@ const About = ({ isDarkMode, setisDarkMode }) => {
           className="flex-1"
         >
           <p className="mb-10 max-w-2xl font-ovo text-center lg:text-left">
-            I am a final-year Computer Science student and a passionate
-            full-stack web developer with a solid foundation in Java, Data
-            Structures & Algorithms. I am actively seeking an opportunity to
+            I am a final year B.Tech Computer Science Engineering student and a passionate
+            full-stack web developer using ReactJs and Spring Boot. I am actively seeking an opportunity to
             contribute to a dynamic team where i can contribute to real world
             business solutions and grow as a software developer.
           </p>
@@ -75,8 +74,7 @@ const About = ({ isDarkMode, setisDarkMode }) => {
               icon={assets.code_icon}
               iconDark={assets.code_icon_dark}
               title={"Technical Skills"}
-              description={`  Java(DSA), HTML, CSS, JavaScript, ReactJs, NextJs, Express,
-                MongoDB`}
+              description={` HTML, CSS, JavaScript, ReactJs, Java, Spring Boot, Rest APIs, Mysql`}
               isDarkMode={isDarkMode}
               setisDarkMode={setisDarkMode}
             />
@@ -86,7 +84,7 @@ const About = ({ isDarkMode, setisDarkMode }) => {
               iconDark={assets.edu_icon_dark}
               title={"Education"}
               description={` B.Tech in Computer Science from Vellore Institute of
-                Technology - Bhopal`}
+                Technology - Bhopal, India`}
               isDarkMode={isDarkMode}
               setisDarkMode={setisDarkMode}
             />
